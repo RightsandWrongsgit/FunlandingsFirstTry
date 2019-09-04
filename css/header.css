@@ -1,0 +1,12 @@
+/**
+ * @file
+ * Subtheme specific CSS.
+ */
+
+
+.navbar-brand .site-logo {
+    margin-right: 2rem;
+    font-size: 1.5em;
+    font-weight: bold;
+    float: center;
+}
