@@ -129,3 +129,17 @@ $settings['rebuild_access'] = TRUE;
  * directory.
  */
 $settings['skip_permissions_hardening'] = TRUE;
+
+/**
+ * Database Settings
+ */
+$databases['default']['default'] = array (
+    'database' => 'Funlandings',
+    'username' => 'Pilot',
+    'password' => '88fun',
+    'prefix' => '',
+    'host' => 'localhost',
+    'port' => '3306',
+    'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+    'driver' => 'mysql',
+  );
