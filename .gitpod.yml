@@ -5,10 +5,11 @@ image:
 # when starting a workspace all docker images are ready
 tasks:
   - name: ddev
-    prebuild: |
+    init: |
+      sudo cp .gitpod/gitpod-setup-ddev.sh /usr/local/bin/.
+    before: |
       sudo cp .gitpod/gitpod-setup-ddev.sh /usr/local/bin/.
     command: |
-      sudo cp .gitpod/gitpod-setup-ddev.sh /usr/local/bin/.
       echo "System is ready, clone a project, `ddev config` if needed, and `gitpod-setup-ddev` to run it"
 
 # Set the following ports public
